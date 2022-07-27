@@ -1,0 +1,11 @@
+python3 inference_video.py \
+    --model-type mattingrefine \
+    --model-backbone resnet50 \
+    --model-backbone-scale 0.25 \
+    --model-refine-mode sampling \
+    --model-checkpoint "checkpoint/PyTorch/pytorch_resnet50.pth" \
+    --video-src "/home/leyinghu/Documents/data/Real_data0720/images.gif" \
+    --video-bgr "/home/leyinghu/Documents/data/Real_data0720/backgrounds.gif" \
+    --output-dir "pred" \
+    --output-type com pha
+    --video-target-bgr "/home/leyinghu/Documents/data/Real_data0720/backgrounds.gif"
